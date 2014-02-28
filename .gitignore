@@ -1,0 +1,13 @@
+.DS_Store
+.DS_Store?
+logs
+doc
+.idea
+node_modules
+
+*.iml
+.idea/
+.classpath
+.project
+.settings
+target/
