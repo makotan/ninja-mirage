@@ -19,8 +19,8 @@ public class SessionFactory {
 
     /**
      *
-     * @return {@link Session}
-     * @throws ConfigurationException
+     * @return {@link jp.sf.amateras.mirage.session.Session}
+     * @throws jp.sf.amateras.mirage.exception.ConfigurationException
      */
     public synchronized static Session getSession() {
         if(session == null){

@@ -16,12 +16,19 @@ mavenのpom.xml にこれを追加
         <artifactId>ninja-mirage</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </dependency>
+    <dependency>
+        <groupId>com.makotan.ninja</groupId>
+        <artifactId>ninja-mirage-test</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </dependency>
 
 
-ninja conf
+ninja
 ============
 
-application.confにmirageの定義を追加
+application.confにmirageの定義を追加(option)
+
+省略した場合はNinjaの定義をそのまま利用
 
 
     jdbc.driver=driver name (option)
@@ -30,6 +37,7 @@ application.confにmirageの定義を追加
     jdbc.password=password
 
 %testや%devもOK
+
 
 conf/Module.javaにNinjaMirageModuleを追加
 
@@ -71,3 +79,13 @@ methodの前に `@Transactional` を設定する
 
     List<RetClass> resultList = sqlManager.
         getResultList(RetClass.class, new ClasspathSqlResource("/META-INF/2way.sql"), param);
+
+
+Dao test
+============
+
+NinjaMirageTestBase をextendsする
+
+クラスが異なること以外は NinjaDaoTestBase と同じ
+
+
