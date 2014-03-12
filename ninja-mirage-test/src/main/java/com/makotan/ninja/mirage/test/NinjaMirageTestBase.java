@@ -50,6 +50,7 @@ public abstract class NinjaMirageTestBase {
         injector = Guice.createInjector(nmm);
         session = nmm.getSession();
         session.begin();
+        injector.injectMembers(ninjaProperties);
     }
 
     @After
