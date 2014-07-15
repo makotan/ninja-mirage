@@ -22,6 +22,14 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.ninjaframework</groupId>
+            <artifactId>ninja-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.ninjaframework</groupId>
+            <artifactId>ninja-test-utilities</artifactId>
+        </dependency>
+        <dependency>
             <groupId>com.makotan.ninja</groupId>
             <artifactId>ninja-mirage</artifactId>
             <version>${project.version}</version>

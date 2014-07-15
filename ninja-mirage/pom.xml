@@ -18,4 +18,17 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.ninjaframework</groupId>
+            <artifactId>ninja-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>jp.sf.amateras</groupId>
+            <artifactId>mirage</artifactId>
+        </dependency>
+
+    </dependencies>
+
 </project>

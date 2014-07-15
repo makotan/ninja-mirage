@@ -34,6 +34,12 @@ public abstract class NinjaMirageTestBase {
         ninjaMode = mode.isPresent() ? mode.get() : NinjaMode.test;
     }
 
+    public NinjaMirageTestBase(NinjaMirageTestBase nest) {
+        this.injector = nest.injector;
+        this.ninjaMode = nest.ninjaMode;
+        this.session = nest.session;
+    }
+
     /**
      * Constructor, receives the test mode to choose the database
      *
